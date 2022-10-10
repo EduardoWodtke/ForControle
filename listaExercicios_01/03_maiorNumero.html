@@ -10,8 +10,18 @@
 
 
     //PROCESSAMENTO
+    let maiorNumero = [];
+    for (let i = 1; i <= 5; i++){
+        const numero = parseInt(prompt("Informe o número " + i));
+        maiorNumero.push(numero);   
+    }
 
+    maiorNumero.sort(((a, b) => (a - b)));
+
+    maiorNumero.length[5]
 
     //SAÍDA
+
+    document.write("O maior número informado é " + maiorNumero.join(", "));
 
 </script>

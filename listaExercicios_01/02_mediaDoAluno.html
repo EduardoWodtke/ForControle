@@ -8,10 +8,19 @@
 
     //ENTRADA
 
+    const qtnNotasAluno = Number(prompt("Quantas notas o aluno tem?"))
 
     //PROCESSAMENTO
+    let somaNotas = 0;
+    for(let i = 1; i <= qtnNotasAluno; i++){
+        let notas = Number(prompt("Nota " + i + " do aluno:"));
+        somaNotas = notas + somaNotas;
+    }
 
+    const media = somaNotas / qtnNotasAluno
 
     //SAÍDA
+
+    document.write("Media do aluno: " + media.toFixed(1));
 
 </script>

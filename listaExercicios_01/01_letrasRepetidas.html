@@ -11,10 +11,20 @@
 
     //ENTRADA
 
+    let listaDeLestras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let letrasM = [];
 
     //PROCESSAMENTO
 
+    for(let i = 0; i <= listaDeLestras.length - 1; i++){
+        let elemento = listaDeLestras[i].toLowerCase();
+        if(letrasM.indexOf(elemento) === -1){
+            letrasM.push(elemento);
+        }
+    }
 
     //SAÍDA
+
+    document.write("As letras são:" + letrasM.sort().join());
 
 </script>
