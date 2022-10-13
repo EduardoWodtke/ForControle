@@ -7,14 +7,19 @@
 
     //ENTRADA
 
-    
+    let popAtual = 80000;
+    const popEstimada = 200000;
+    const taxaCrescimento = 1.03
 
     //PROCESSAMENTO
 
-    for(let i = 80000; i < 200000; i++){
-
+    let anos = 0;
+    for (anos = 1; popAtual <= popEstimada; anos++) {
+        popAtual = popAtual * taxaCrescimento
     }
 
     //SAÍDA
+
+    document.write("Anos que vão levar para atingir " + popEstimada + " sera: " + anos + " anos.");
 
 </script>

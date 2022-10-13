@@ -16,12 +16,8 @@
         maiorNumero.push(numero);   
     }
 
-    maiorNumero.sort(((b, a) => (a - b)));
-
-    maiorNumero.length[0]
-
     //SAÍDA
 
-    document.write("O maior número informado é " + maiorNumero.join(", "));
+    document.write("O maior número informado é " + maiorNumero.sort(((b, a) => (a - b)))[0]);
 
 </script>
