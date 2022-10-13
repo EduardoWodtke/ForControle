@@ -7,10 +7,23 @@
 
     //ENTRADA
 
+    const numero = Number(prompt("Número informar:"));
 
     //PROCESSAMENTO
-
+    
+    let divisores = 0;
+    for(let i = 1; i <= numero; i++){
+        if(numero % i === 0){
+            divisores++;
+        }
+    }
 
     //SAÍDA
+
+    if(divisores === 2){
+        document.write("seu número é primo burro: " + numero);
+    }else{
+        document.write("Não quero não");
+    }
 
 </script>

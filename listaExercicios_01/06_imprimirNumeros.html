@@ -7,10 +7,26 @@
 
     //ENTRADA
 
+    let numeroInicial = Number(prompt("Informe o número: "));
+    let numeroFinal = Number(prompt("Número final: "))
+    let numerosImpar = [];
+    let numerosPar = [];
 
     //PROCESSAMENTO
 
-
+    if (numeroInicial < numeroFinal) {
+        for (let i = numeroInicial; i <= numeroFinal; i++) {
+            if(i % 2 === 0){
+                numerosPar.push(i);
+            }else{
+                numerosImpar.push(i);
+            }        
+        }
+    }else{
+        document.write("ERROR")
+    }
     //SAÍDA
+
+    document.write("<li>Números pares: " + numerosPar.join(", ") + ".</li></br><li>Números impar: " + numerosImpar.join(", ") + ".</li>")
 
 </script>

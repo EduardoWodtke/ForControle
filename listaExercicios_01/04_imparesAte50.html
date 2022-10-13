@@ -7,10 +7,16 @@
 
     //ENTRADA
 
-
     //PROCESSAMENTO
-
+    let numerosImpar = [];
+    for(let i = 1; i <= 50; i++){
+        if(i % 2 === 1){
+            numerosImpar.push(i)
+        }
+    }
 
     //SAÍDA
+
+    document.write("Os numero impares de 1 até 50 são: " + numerosImpar.join(", "));
 
 </script>
