@@ -7,10 +7,26 @@
 
     //ENTRADA
 
+    let popAtual = 50000;
+    const taxaCrescimento = 1.015;
+    let popFutura = 0;
 
     //PROCESSAMENTO
-
+    let resposta;
+    let respostaDois;
+    let anos = 0;
+    for (anos = 1; anos <= 10; anos++) {
+        popAtual =  popAtual * taxaCrescimento
+        alert(popAtual);
+        if(anos === 5){
+            resposta = popAtual
+        }else if(anos === 10){
+            respostaDois = popAtual 
+        }
+    }
 
     //SAÍDA
+
+    document.write("<li>Em 5 anos a população será: " + resposta.toFixed(0) + ".</li></br><li>Já em 10 anos será: " + respostaDois.toFixed(0) + ".</li>");
 
 </script>

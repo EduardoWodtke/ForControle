@@ -7,17 +7,21 @@
 
     //ENTRADA
 
-    let numerosMedia = [];
+    let numerosSoma = 0;
 
     //PROCESSAMENTO
     
     for (let i = 1; i <= 5; i++){
         let numeros = Number(prompt("Informe um número"));
-        numerosMedia.push(numeros);
+        numerosSoma += numeros;
+        alert(numerosSoma) 
     }
-
+    
+    let numerosMedia = numerosSoma / 5;
     
 
     //SAÍDA
+
+    document.write("A média do aluno será: " + numerosMedia.toFixed(1));
 
 </script>
