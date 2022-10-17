@@ -9,10 +9,36 @@
 
     //ENTRADA
 
+    let candidato1 = prompt("Informe os canditados")
+    let candidato2 = prompt("Informe os canditados")
+    let candidato3 = prompt("Informe os canditados")
+    const qtnDeAluno = prompt("quantos alunos")
+    let voto1 = 0;
+    let voto2 = 0;
+    let voto3 = 0;
+    let seuVoto = 0;
+
 
     //PROCESSAMENTO
-
+    
+    for (let i = 1; i <= qtnDeAluno; i++) {
+        seuVoto = parseInt(prompt("Informe seu voto"))
+        if (voto === 1) {
+            voto1++
+        } else if (voto === 2) {
+            voto2++
+        } else if (voto === 3) {
+            voto3++
+        }
+    }
 
     //SAÍDA
 
+    const porcentagemDeVotosC1 = voto1 / qtnDeAluno * 100
+    const porcentagemDeVotosC2 = voto2 / qtnDeAluno * 100
+    const porcentagemDeVotosC3 = voto3 / qtnDeAluno * 100
+
+
+
+    document.write(porcentagemDeVotosC1 + porcentagemDeVotosC2 + porcentagemDeVotosC3)
 </script>
